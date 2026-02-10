@@ -1,0 +1,9 @@
+{
+  "name": "openclaw-skill-ai-news-oracle",
+  "version": "1.0.0",
+  "description": "Fetch real-time AI news briefings from the AI News Oracle.",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}

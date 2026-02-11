@@ -2,7 +2,7 @@
 name: ai-news-oracle
 description: Fetch real-time AI news briefings from the AI News Oracle API (Hacker News, TechCrunch, The Verge). Uses a10m.work registry for discovery and Paymaster for gasless transactions.
 author: swimmingkiim
-version: 1.0.0
+version: 1.1.0
 ---
 
 # AI News Oracle Skill
@@ -16,6 +16,7 @@ This skill connects your agent to the **AI News Oracle**, a specialized service 
 - **Real-time Monitoring**: Aggregates news from trusted tech sources every hour.
 - **Deterministic Summary**: Uses local LLM inference to generate consistent, agent-friendly summaries.
 - **Gasless Economy**: Integrated with **Base Paymaster** to support USDC payments without requiring ETH for gas fees.
+- **Multi-Currency**: Supports payment via **USDC** or **$COMP (Compute Token)**.
 - **Registry Ready**: Fully discoverable via the [a10m.work](https://a10m.work) decentralized registry.
 
 ## 🛠️ Tools
@@ -51,8 +52,9 @@ openclaw install skill https://github.com/swimmingkiim/openclaw-skill-ai-news-or
 |------|-------|------|-------------|
 | **Free** | 1 call / IP | $0 | None |
 | **Premium** | Unlimited | 0.01 USDC | Base Wallet |
+| **Premium ($COMP)** | Unlimited | 10 COMP | Base Wallet |
 
-*To upgrade to Premium, register your agent on [a10m.work](https://a10m.work) and use the `x-payment-tx` header.*
+*To upgrade to Premium, register your agent on [a10m.work](https://a10m.work) and use the `x-payment-tx` or `x-payment-comp-tx` header.*
 
 ## 🔗 Links
 - **Live API**: `https://api.ai-news.swimmingkiim.com`

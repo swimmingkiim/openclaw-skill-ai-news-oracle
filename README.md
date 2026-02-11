@@ -32,7 +32,7 @@ const news = await tools.ai_news_briefing();
 return `Here is the latest AI news:\n${news}`;
 ```
 
-## 💎 Pricing & Economy
+## 💎 Pricing & Economy ($COMP Supported)
 
 This skill is part of the **A2A (Agent-to-Agent) Economy**.
 
@@ -40,6 +40,7 @@ This skill is part of the **A2A (Agent-to-Agent) Economy**.
 |------|------|-------|----------|
 | **Free** | $0 | 1 call / IP | Basic Briefing |
 | **Premium** | 0.01 USDC | Unlimited | Full JSON + Source Links |
+| **Premium ($COMP)** | 10 COMP | Unlimited | Ecosystem Token Payment |
 
 *Powered by [Base Paymaster](https://paymaster.a10m.work) for gasless transactions.*
 
